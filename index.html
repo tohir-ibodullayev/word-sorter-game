@@ -576,9 +576,8 @@ const DB = [
   {e:'🥔',n:'potato',      c:'Vegetable'},{e:'🥒',n:'cucumber',     c:'Vegetable'},
   {e:'🫑',n:'pepper',      c:'Vegetable'},{e:'🧄',n:'garlic',       c:'Vegetable'},
   {e:'🥬',n:'lettuce',     c:'Vegetable'},{e:'🍄',n:'mushroom',     c:'Vegetable'},
-  {e:'🌶️',n:'chili',       c:'Vegetable'},{e:'🫘',n:'beans',        c:'Vegetable'},
+  {e:'🌶️',n:'chili pepper',c:'Vegetable'},{e:'🫘',n:'beans',        c:'Vegetable'},
   {e:'🍅',n:'tomato',      c:'Vegetable'},{e:'🥑',n:'avocado',      c:'Vegetable'},
-  {e:'🫚',n:'olive oil',   c:'Vegetable'},
 
   /* ANIMALS — 20 */
   {e:'🐶',n:'dog',         c:'Animal'},{e:'🐱',n:'cat',          c:'Animal'},
@@ -593,14 +592,12 @@ const DB = [
   {e:'🐍',n:'snake',       c:'Animal'},{e:'🦓',n:'zebra',        c:'Animal'},
 
   /* FOOD — 15 */
-  {e:'🍕',n:'pizza',       c:'Food'},{e:'🍦',n:'ice cream',    c:'Food'},
-  {e:'🍰',n:'cake',        c:'Food'},{e:'🍔',n:'burger',       c:'Food'},
-  {e:'🌮',n:'taco',        c:'Food'},{e:'🍜',n:'noodles',      c:'Food'},
-  {e:'🍣',n:'sushi',       c:'Food'},{e:'🥪',n:'sandwich',     c:'Food'},
-  {e:'🍩',n:'donut',       c:'Food'},{e:'🍪',n:'cookie',       c:'Food'},
-  {e:'🥗',n:'salad',       c:'Food'},{e:'🍿',n:'popcorn',      c:'Food'},
-  {e:'🧁',n:'cupcake',     c:'Food'},{e:'🥞',n:'pancakes',     c:'Food'},
-  {e:'🍱',n:'lunchbox',    c:'Food'},
+  {e:'🍕',n:'pizza',       c:'Food'}, {e:'🍦',n:'ice cream',    c:'Food'},
+  {e:'🍰',n:'cake',        c:'Food'}, {e:'🍔',n:'burger',       c:'Food'},
+  {e:'🍜',n:'noodles',      c:'Food'},{e:'🥪',n:'sandwich',     c:'Food'},
+  {e:'🍩',n:'donut',       c:'Food'}, {e:'🍪',n:'cookie',       c:'Food'},
+  {e:'🥗',n:'salad',       c:'Food'}, {e:'🍿',n:'popcorn',      c:'Food'},
+  {e:'🧁',n:'cupcake',     c:'Food'}, {e:'🥞',n:'pancakes',     c:'Food'},
 
   /* VEHICLES — 15 */
   {e:'🚗',n:'car',         c:'Vehicle'},{e:'✈️',n:'airplane',    c:'Vehicle'},
@@ -609,8 +606,7 @@ const DB = [
   {e:'🏍️',n:'motorcycle',  c:'Vehicle'},{e:'🚌',n:'bus',         c:'Vehicle'},
   {e:'🚀',n:'rocket',      c:'Vehicle'},{e:'⛵',n:'sailboat',    c:'Vehicle'},
   {e:'🚑',n:'ambulance',   c:'Vehicle'},{e:'🚒',n:'fire truck',  c:'Vehicle'},
-  {e:'🛻',n:'pickup truck',c:'Vehicle'},{e:'🚜',n:'tractor',     c:'Vehicle'},
-  {e:'🛶',n:'canoe',       c:'Vehicle'},
+  {e:'🚜',n:'tractor',     c:'Vehicle'},
 
   /* CLOTHES — 15 */
   {e:'👕',n:'t-shirt',     c:'Clothes'},{e:'👖',n:'jeans',       c:'Clothes'},
@@ -618,16 +614,14 @@ const DB = [
   {e:'🧣',n:'scarf',       c:'Clothes'},{e:'🧤',n:'gloves',      c:'Clothes'},
   {e:'🧢',n:'cap',         c:'Clothes'},{e:'👒',n:'hat',         c:'Clothes'},
   {e:'👟',n:'sneakers',    c:'Clothes'},{e:'🥾',n:'boots',       c:'Clothes'},
-  {e:'🩱',n:'swimsuit',    c:'Clothes'},{e:'🧦',n:'socks',       c:'Clothes'},
+  {e:'🧦',n:'socks',       c:'Clothes'},
   {e:'👔',n:'shirt',       c:'Clothes'},{e:'🩳',n:'shorts',      c:'Clothes'},
-  {e:'🧤',n:'mittens',     c:'Clothes'},
-
+  
   /* SCHOOL — 15 */
   {e:'📚',n:'books',       c:'School'},{e:'✏️',n:'pencil',      c:'School'},
   {e:'📏',n:'ruler',       c:'School'},{e:'🔬',n:'microscope',  c:'School'},
-  {e:'🖊️',n:'pen',         c:'School'},{e:'📐',n:'set square',  c:'School'},
-  {e:'🗂️',n:'folder',      c:'School'},{e:'💻',n:'laptop',      c:'School'},
-  {e:'🖍️',n:'crayon',      c:'School'},{e:'📓',n:'notebook',    c:'School'},
+  {e:'🖊️',n:'pen',         c:'School'},{e:'🗂️',n:'folder',      c:'School'},
+  {e:'💻',n:'laptop',      c:'School'},{e:'📓',n:'notebook',    c:'School'},
   {e:'🔭',n:'telescope',   c:'School'},{e:'🎒',n:'backpack',    c:'School'},
   {e:'🗑️',n:'bin',         c:'School'},{e:'📌',n:'pin',         c:'School'},
   {e:'🔋',n:'battery',     c:'School'},
@@ -639,7 +633,7 @@ const DB = [
   {e:'🎳',n:'bowling',     c:'Sports'},{e:'🏋️',n:'weightlifting',c:'Sports'},
   {e:'🤸',n:'gymnastics',  c:'Sports'},{e:'🏈',n:'american football',c:'Sports'},
   {e:'⚾',n:'baseball',    c:'Sports'},{e:'🏐',n:'volleyball',  c:'Sports'},
-  {e:'🥊',n:'boxing',      c:'Sports'},{e:'🏓',n:'ping pong',   c:'Sports'},
+  {e:'🥊',n:'boxing',      c:'Sports'},{e:'🏓',n:'table tennis',   c:'Sports'},
   {e:'🏸',n:'badminton',   c:'Sports'},
 
   /* NATURE — 15 */
@@ -649,7 +643,6 @@ const DB = [
   {e:'❄️',n:'snowflake',   c:'Nature'},{e:'🌙',n:'moon',        c:'Nature'},
   {e:'☀️',n:'sun',         c:'Nature'},{e:'🌋',n:'volcano',     c:'Nature'},
   {e:'🍂',n:'autumn leaf', c:'Nature'},{e:'🌵',n:'cactus',      c:'Nature'},
-  {e:'🌊',n:'ocean',       c:'Nature'},{e:'🌾',n:'wheat',       c:'Nature'},
   {e:'🪨',n:'rock',        c:'Nature'},
 
   /* HOME — 15 */
